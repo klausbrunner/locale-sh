@@ -15,7 +15,7 @@ public abstract class LocaleDecimalFormatSymbolsProvider extends DecimalFormatSy
      *
      * @return LOCALE_DATA
      */
-    public abstract LocaleData getLocaleData();
+    protected abstract LocaleData getLocaleData();
 
     /*
      * (non-Javadoc)

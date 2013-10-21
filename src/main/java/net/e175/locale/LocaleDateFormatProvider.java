@@ -16,7 +16,7 @@ public abstract class LocaleDateFormatProvider extends DateFormatProvider {
      *
      * @return LOCALE_DATA
      */
-    public abstract LocaleData getLocaleData();
+    protected abstract LocaleData getLocaleData();
 
     /*
      * (non-Javadoc)
@@ -61,7 +61,7 @@ public abstract class LocaleDateFormatProvider extends DateFormatProvider {
     }
 
     private String selectDateFormatForStyle(int style) {
-        String format = null;
+        String format;
         switch (style) {
             case DateFormat.FULL:
                 format = getLocaleData().getDateFull();
@@ -82,7 +82,7 @@ public abstract class LocaleDateFormatProvider extends DateFormatProvider {
     }
 
     private String selectTimeFormatForStyle(int style) {
-        String format = null;
+        String format;
         switch (style) {
             case DateFormat.FULL:
                 format = getLocaleData().getTimeFull();

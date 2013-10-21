@@ -14,7 +14,7 @@ public abstract class LocaleLocaleNameProvider extends LocaleNameProvider {
      *
      * @return LOCALE_DATA
      */
-    public abstract LocaleData getLocaleData();
+    protected abstract LocaleData getLocaleData();
 
     /*
      * (non-Javadoc)
