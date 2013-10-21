@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.e175.locale</groupId>
+	<artifactId>locale-sh</artifactId>
+	<name>Serbo-Croatian/Bosnian Locale Service Provider</name>
+	<version>0.0.5-SNAPSHOT</version>
+	<description>A Java extension JAR providing (partial) definitions for Bosnian and Serbo-Croatian (latin) locales. Includes date and time formats, number formats, collation and others.
+
+Requires Java 6 or higher. See http://java.sun.com/docs/books/tutorial/ext/basics/index.html and the Javadoc of java.util.spi.LocaleServiceProvider for information on usage and deployment.</description>
+	<developers>
+		<developer>
+			<id>kb</id>
+			<name>Klaus Brunner</name>
+		</developer>
+	</developers>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>
